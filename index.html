@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definição do conjunto de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Definição do comportamento de exibição em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página, importante para SEO -->
+    <title>Amigo Oculto Haro</title>
+
+    <!-- Descrição da página para SEO -->
+    <meta name="description" content="Participe do nosso jogo de Amigo Oculto online! Encontre ideias criativas para presentear seus amigos e familiares com o Amigo Oculto Haro.">
+
+    <!-- Palavras-chave para SEO -->
+    <meta name="keywords" content="Amigo Oculto, jogo de amigo oculto, presente criativo, amigo secreto, presente online">
+
+    <!-- Controle de indexação pelos motores de busca -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para melhorar compartilhamento em redes sociais -->
+    <meta property="og:title" content="Amigo Oculto Haro">
+    <meta property="og:description" content="Participe do nosso jogo de Amigo Oculto online e descubra a melhor maneira de presentear seus amigos e familiares!">
+    <meta property="og:image" content="URL_da_imagem_para_compartilhar">
+    <meta property="og:url" content="URL_da_página_do_site">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amigo Oculto Haro">
+    <meta name="twitter:description" content="Entre no jogo de Amigo Oculto Haro e compartilhe o momento divertido de dar presentes criativos!">
+    <meta name="twitter:image" content="URL_da_imagem_para_twitter">
+
+    <!-- Link canônico para evitar problemas de conteúdo duplicado -->
+    <link rel="canonical" href="URL_da_página_do_site">
+
+    
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url('https://imagens.deliveryseguro.com/delivery_seguro/empresa/id-11/haro-capa.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <h1>Amigo Oculto</h1>
+
+    <p id="turnMessage" class="turn-message">
+        Agora é a vez de <strong id="currentPerson"></strong>!
+    </p>
+
+    <!-- Contêiner de slots -->
+    <div class="tv-container">
+        <div class="slot" id="slot1">
+            <img src="pessoa.jpg" alt="Slot 1">
+        </div>
+        <div class="slot" id="slot2">
+            <img src="pessoa.jpg" alt="Slot 2">
+        </div>
+        <div class="slot" id="slot3">
+            <img src="pessoa.jpg" alt="Slot 3">
+        </div>
+        <div class="slot" id="slot4">
+            <img src="pessoa.jpg" alt="Slot 4">
+        </div>
+        <div class="slot" id="slot5">
+            <img src="pessoa.jpg" alt="Slot 5">
+        </div>
+        <div class="slot" id="slot6">
+            <img src="pessoa.jpg" alt="Slot 6">
+        </div>
+        <div class="slot" id="slot7">
+            <img src="pessoa.jpg" alt="Slot 7">
+        </div>
+        <div class="slot" id="slot8">
+            <img src="pessoa.jpg" alt="Slot 8">
+        </div>
+        <div class="slot" id="slot9">
+            <img src="pessoa.jpg" alt="Slot 9">
+        </div>
+    </div>
+
+    <!-- Botão para girar as slots -->
+    <button class="button" id="spinButton" onclick="spinSlots()">Girar</button>
+
+    <!-- Área de exibição do resultado -->
+    <div class="result" id="result"></div>
+
+    <!-- Botão para reiniciar o jogo -->
+    <button class="reset-button hidden" id="resetButton" onclick="resetGame()">Reiniciar Jogo</button>
+
+    <!-- Áudio de aplausos -->
+    <audio id="applauseSound" src="aplause.mp3" preload="auto"></audio>
+
+    <!-- Link para o script JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
